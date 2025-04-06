@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="png" href="images/icon.png">
+    <link rel="icon" type="image/png" href="/icon.png">
 </head>
 <body>
     <div class="card">
+        <h2 class="search-title">Enter Location</h2>
+        
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <button aria-label="Search"><img src="./search.svg" alt="Search Icon"></button>
         </div>
-        <div class="error">
-            <p>Invalid City Name</p>
+
+        <div class="error" style="display: none;">
+            <h2>Invalid City Name</h2>
         </div>
+
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
+            <img src="./rain.svg" class="weather-icon" alt="Weather Icon">
             <h1 class="temp">22°c</h1>
             <h2 class="city">New York</h2>
+
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png" alt="">
+                    <img src="./sun.svg" alt="Humidity Icon">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
@@ -30,7 +35,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="images/wind.png" alt="">
+                    <img src="./wind.svg" alt="Wind Icon">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
